@@ -1,0 +1,32 @@
+{
+    "name": "Proyecto de Lenguaje de Programación II",
+    "short_name": "Proyecto de LP 2",
+    "description": "Proyecto final de Lenguaje de Programación II de la sección T4QB de Cibertec",
+    "start_url": "/",
+    "scope": "/",
+    "theme-color": "#609B8A",
+    "background-color": "grey",
+    "icons": [
+        {
+            "src": "img/icons/emilima_128.webp",
+            "sizes": "128x128",
+            "type": "image/webp"
+        },
+        {
+            "src": "img/icons/emilima_144.webp",
+            "sizes": "144x144",
+            "type": "image/webp"
+        },
+        {
+            "src": "img/icons/emilima_192.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "img/icons/Emilima_Logo.png",
+            "sizes": "400x400",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}

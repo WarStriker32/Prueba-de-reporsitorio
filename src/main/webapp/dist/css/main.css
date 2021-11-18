@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css");
+@import url("https://cdn.datatables.net/1.11.0/css/dataTables.bootstrap4.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css");
+:root {
+  --mdb-surface:white;
+  --mdb-onSurface:#4F4F4F;
+  --mdb-primary:#3F51B5;
+  --mdb-secondary:#673AB7;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mdb-surface:#121212;
+    --mdb-onSurface:white;
+    --mdb-primary:#002984;
+    --mdb-secondary:#320B86;
+    color-scheme: light dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #7F7F7F !important;
+  }
+
+  ::-moz-selection {
+    background-color: #320B86B3;
+  }
+
+  ::selection {
+    background-color: #320B86B3;
+  }
+
+  .form-outline .form-control ~ .form-label {
+    color: #FFF9;
+  }
+
+  .card {
+    background-color: #121212;
+    box-shadow: 0 10px 20px 0 #FFFFFF0D;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF8C;
+  }
+
+  .card-header {
+    border-bottom: 1px solid #FFFFFF20;
+  }
+
+  .bg-light {
+    background-color: #262626 !important;
+  }
+
+  .bg-dark {
+    background-color: #FBFBFB !important;
+  }
+
+  .form-outline .form-control.disabled, .form-outline .form-control:disabled, .form-outline .form-control[readonly] {
+    background-color: #3A3A3A;
+  }
+
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFFFFFB3;
+  }
+
+  .dropdown-menu {
+    background-color: black;
+  }
+
+  .dropdown-item {
+    color: #dedad6;
+  }
+
+  .dropdown-item.active, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+    color: #e9e7e4;
+    background-color: #111111;
+  }
+
+  .form-control:disabled, .form-control:read-only {
+    background-color: #111111;
+  }
+
+  .modal-content {
+    background-color: black;
+  }
+
+  .col-form-label {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .modal-header {
+    border-bottom-color: #1f1f1f;
+  }
+
+  .modal-footer {
+    border-top-color: #1f1f1f;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, th {
+    font-weight: 400;
+  }
+
+  .form-label {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .form-check-input[type=radio]:after {
+    background-color: black;
+  }
+
+  .form-select {
+    background-color: #121212;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CECECE;
+  border-radius: 4px;
+}
+
+::-moz-selection {
+  background-color: #673AB7B3;
+  color: white;
+}
+
+::selection {
+  background-color: #673AB7B3;
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--mdb-primary);
+}
+
+.btn-secondary {
+  background-color: var(--mdb-secondary);
+}
+
+.form-check-input[type=radio]:checked::after {
+  border-color: var(--mdb-primary);
+  background-color: var(--mdb-primary);
+}
+
+.form-select:focus {
+  border-color: var(--mdb-primary);
+}
+
+th, td {
+  color: var(--mdb-onSurface);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  --mdb-table-accent-bg: #FFFFFF0D;
+}
+
+.btn-outline-primary {
+  color: var(--mdb-primary);
+  border-color: var(--mdb-primary);
+}
+.btn-outline-primary:hover {
+  color: #252f69;
+  background-color: rgba(255, 255, 255, 0.0196078431);
+}
+
+.btn-outline-secondary {
+  color: var(--mdb-secondary);
+  border-color: var(--mdb-secondary);
+}
+.btn-outline-secondary:hover {
+  color: #00091e;
+  background-color: rgba(255, 255, 255, 0.0196078431);
+}
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  @keyframes skeleton-loading {
+    0% {
+      background-color: #a3b8c2;
+    }
+    100% {
+      background-color: #f0f3f5;
+    }
+  }
+}
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  width: auto;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader > img {
+  width: 100%;
+}
+
+.loaderHidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+::-webkit-scrollbar-button:single-button {
+  background-color: #BBB;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555 transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777 transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555 transparent transparent transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  border-color: #777 transparent transparent transparent;
+}
+
+body {
+  background-color: var(--mdb-surface);
+  color: var(--mdb-onSurface);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url("../../img/icons/event_24dp.svg");
+}
+
+a[target=_blank] {
+  background: url("../../img/icons/open_in_new_24dp.svg") no-repeat 100% 0;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}
+
+.form-select {
+  background-image: url("../../img/icons/expand_more_24dp.svg");
+}
+
+a[href^=mailto] {
+  background: url("../../img/icons/email_24dp.svg") no-repeat 100% 0;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}
+
+a[href^=tel] {
+  background: url("../../img/icons/phone_24dp.svg") no-repeat 100% 0;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}

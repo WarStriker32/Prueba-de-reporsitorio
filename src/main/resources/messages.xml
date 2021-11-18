@@ -1,0 +1,25 @@
+<messages>
+    <!-- Pension -->
+    <message name="pension.added">Pensión registrada correctamente</message>
+    <message name="pension.failed.add">Error al intentar registrar pensión</message>
+    <message name="pension.updated">Pensión actualizada correctamente</message>
+    <message name="pension.failed.update">Error al intentar actualizar pensión</message>
+    <message name="pension.deleted">Pensión eliminada correctamente</message>
+    <message name="pension.failed.delete">Error al intentar eliminar pensión</message>
+
+    <!-- Position -->
+    <message name="position.added">Cargo registrado correctamente</message>
+    <message name="position.failed.add">Error al intentar registrar cargo</message>
+    <message name="position.updated">Cargo actualizado correctamente</message>
+    <message name="position.failed.update">Error al intentar actualizar cargo</message>
+    <message name="position.deleted">Cargo eliminado correctamente</message>
+    <message name="position.failed.delete">Error al intentar eliminar cargo</message>
+
+    <!-- Trabajador -->
+    <message name="worker.added">Trabajador registrado correctamente</message>
+    <message name="worker.failed.add">Error al intentar registrar trabajador</message>
+    <message name="worker.updated">Trabajador actualizado correctamente</message>
+    <message name="worker.failed.update">Error al intentar actualizar trabajador</message>
+    <message name="worker.deleted">Trabajador eliminado correctamente</message>
+    <message name="worker.failed.delete">Error al intentar eliminar trabajador</message>
+</messages>
