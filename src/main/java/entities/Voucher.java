@@ -1,7 +1,6 @@
 package entities;
 
 public class Voucher {
-	
 	private int id_voucher, id_worker,month,year;
 	private double minimunwage,medicalrest,holidays, household,extrahours25,extrahours35,extrahours100,
 	transport,feeding,reward,bonus,earning,pension,judicial,esp,tardiness,earlydeparture,

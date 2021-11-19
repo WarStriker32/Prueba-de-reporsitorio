@@ -1,7 +1,6 @@
 package entities;
 
 public class Worker {
-
 	private int idnum,birthday,mobilenum,entrydate,terminationdate,positionid,
 	pensionid,minorchildren,eps,judicialretention;
 	private String names,surname,gender,address, emailaddres,username,password;

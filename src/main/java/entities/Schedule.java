@@ -3,6 +3,7 @@ package entities;
 public class Schedule {
   private int code,worker_id,month,year,medicalrestdays,absence,holidays,suspensiondays,
   minusteslate,earlymins,extrahours25,extrahours35,extrahours100;
+  
   public int getCode() {
 		return code;
 	}
