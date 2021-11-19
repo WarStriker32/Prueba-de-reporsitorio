@@ -106,6 +106,6 @@ public class Schedule {
 	public void setExtrahours100(int extrahours100) {
 		this.extrahours100 = extrahours100;
 	}
-	
+
 
 }
