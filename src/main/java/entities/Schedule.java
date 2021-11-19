@@ -108,5 +108,4 @@ public class Schedule {
 		this.extrahours100 = extrahours100;
 	}
 
-
 }
